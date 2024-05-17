@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>ChallwaCom</title>
-    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-lugx-gaming.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animate.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>ChallwaCom</title>
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-lugx-gaming.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animate.css') }}">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
 
 <body>
   <div id="js-preloader" class="js-preloader">
@@ -30,30 +31,31 @@
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="{{ url_for('static', filename='assets/images/logo.png') }}" alt="" style="width: 158px;"> <!-- Colocar el logo de challwacom -->
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li><a href="{{ url_for('index') }}" class="active">Inicio</a></li>
-                      <li><a href="{{ url_for('shop') }}">Tienda</a></li>
-                      <li><a href="{{ url_for('sell') }}">Vende ahora</a></li>
-                      <li><a href="{{ url_for('fishes') }}">Conoce los peces</a></li>
-                      <li><a href="{{ url_for('contact') }}">Contacto</a></li>
-                      <li><a href="#">Inicia sesion</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="{{ url_for('static', filename='assets/images/logo.png') }}" alt="" style="width: 158px;">
+              <!-- Colocar el logo de challwacom -->
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="{{ url_for('index') }}" class="active">Inicio</a></li>
+              <li><a href="{{ url_for('shop') }}">Tienda</a></li>
+              <li><a href="{{ url_for('sell') }}">Vende ahora</a></li>
+              <li><a href="{{ url_for('fishes') }}">Conoce los peces</a></li>
+              <li><a href="{{ url_for('contact') }}">Contacto</a></li>
+              <li><a href="#">Inicia sesion</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
         </div>
+      </div>
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
@@ -65,10 +67,12 @@
           <div class="caption header-text">
             <h6>Bienvenidos a ChallwaCom</h6>
             <h2>TIENDA DE PRODUCTOS PESQUEROS!</h2>
-            <p>¡Descubre lo mejor del mar con ChallwaCom! Apoya a los pescadores artesanales y disfruta de productos frescos y sostenibles directamente del océano. ¡Bienvenido a bordo!</p>
+            <p>¡Descubre lo mejor del mar con ChallwaCom! Apoya a los pescadores artesanales y disfruta de productos
+              Frescos y sostenibles directamente del océano. ¡Bienvenido a bordo!</p>
             <div class="search-input">
               <form id="search" action="#">
-                <input type="text" placeholder="Escribe lo que necesites" id='searchText' name="searchKeyword" onkeypress="handle" />
+                <input type="text" placeholder="Escribe lo que necesites" id='searchText' name="searchKeyword"
+                  onkeypress="handle" />
                 <button role="button">BUSCAR</button>
               </form>
             </div>
@@ -100,7 +104,8 @@
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="{{ url_for('static', filename='assets/images/fishing-rod.png') }}" alt="" style="max-width: 44px;">
+                <img src="{{ url_for('static', filename='assets/images/fishing-rod.png') }}" alt=""
+                  style="max-width: 44px;">
               </div>
               <h4>Pesca sostenible</h4>
             </div>
@@ -110,7 +115,8 @@
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="{{ url_for('static', filename='assets/images/sailboat.png') }}" alt="" style="max-width: 44px;">
+                <img src="{{ url_for('static', filename='assets/images/sailboat.png') }}" alt=""
+                  style="max-width: 44px;">
               </div>
               <h4>Embarcaciones aptas</h4>
             </div>
@@ -147,7 +153,8 @@
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/cania.jpeg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/cania.jpeg') }}"
+                  alt=""></a>
               <span class="price"><em>S/.28</em>S/.20</span>
             </div>
             <div class="down-content">
@@ -160,11 +167,12 @@
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/bonito.jpg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/bonito.jpg') }}"
+                  alt=""></a>
               <span class="price">S/.44</span>
             </div>
             <div class="down-content">
-              <span class="category">Pescados frescos</span>
+              <span class="category">Pescados Frescos</span>
               <h4>Bonito</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
@@ -173,7 +181,8 @@
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/remo.jpeg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/remo.jpeg') }}"
+                  alt=""></a>
               <span class="price"><em>S/.64</em>S/.44</span>
             </div>
             <div class="down-content">
@@ -186,7 +195,8 @@
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/chaleco.jpeg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/chaleco.jpeg') }}"
+                  alt=""></a>
               <span class="price">S/.32</span>
             </div>
             <div class="down-content">
@@ -217,72 +227,78 @@
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/top-game-01.jpg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/caballa.jpg') }}"
+                  alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+              <span class="category">Pescados Frescos</span>
+              <h4>Caballa</h4>
+              <a href="product-details.html">Explora</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/top-game-02.jpg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/jurel.jpg') }}"
+                  alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+              <span class="category">Pescados Frescos</span>
+              <h4>Jurel</h4>
+              <a href="product-details.html">Explora</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/top-game-03.jpg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/trucha.jpg') }}"
+                  alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+              <span class="category">Pescados Frescos</span>
+              <h4>Trucha</h4>
+              <a href="product-details.html">Explora</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/top-game-04.jpg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/lenguado.jpg') }}"
+                  alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+              <span class="category">Pescados Frescos</span>
+              <h4>Lenguado</h4>
+              <a href="product-details.html">Explora</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/top-game-05.jpg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/bonito.jpg') }}"
+                  alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+              <span class="category">Pescados Frescos</span>
+              <h4>Bonito</h4>
+              <a href="product-details.html">Explora</a>
             </div>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/top-game-06.jpg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/anchoveta.jpeg') }}"
+                  alt=""></a>
             </div>
             <div class="down-content">
-                <span class="category">Adventure</span>
-                <h4>Assasin Creed</h4>
-                <a href="product-details.html">Explore</a>
+              <span class="category">Pescados Frescos</span>
+              <h4>Anchoveta</h4>
+              <a href="product-details.html">Explora</a>
             </div>
           </div>
         </div>
@@ -303,7 +319,8 @@
           <div class="item">
             <h4>Pescados Frescos</h4>
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/pescadosfrescos.jpeg') }}" alt=""></a>
+              <a href="product-details.html"><img
+                  src="{{ url_for('static', filename='assets/images/pescadosfrescos.jpeg') }}" alt=""></a>
             </div>
           </div>
         </div>
@@ -311,7 +328,8 @@
           <div class="item">
             <h4>Mariscos</h4>
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/mariscos.jpeg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/mariscos.jpeg') }}"
+                  alt=""></a>
             </div>
           </div>
         </div>
@@ -319,7 +337,8 @@
           <div class="item">
             <h4>Equipos de Pesca</h4>
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/accesoriospesca.jpeg') }}" alt=""></a>
+              <a href="product-details.html"><img
+                  src="{{ url_for('static', filename='assets/images/accesoriospesca.jpeg') }}" alt=""></a>
             </div>
           </div>
         </div>
@@ -327,7 +346,8 @@
           <div class="item">
             <h4>Ropa y Accesorios</h4>
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/indumentarias.jpeg') }}" alt=""></a>
+              <a href="product-details.html"><img
+                  src="{{ url_for('static', filename='assets/images/indumentarias.jpeg') }}" alt=""></a>
             </div>
           </div>
         </div>
@@ -335,14 +355,15 @@
           <div class="item">
             <h4>Accesorios Náuticos</h4>
             <div class="thumb">
-              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/nauticos.jpeg') }}" alt=""></a>
+              <a href="product-details.html"><img src="{{ url_for('static', filename='assets/images/nauticos.jpeg') }}"
+                  alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <div class="section cta">
     <div class="container">
       <div class="row">
@@ -351,12 +372,12 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
-                  <h6>Our Shop</h6>
-                  <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
+                  <h6>Nuestra tienda</h6>
+                  <h2>¡Haga su pedido anticipado, compre y obtenga los mejores <em>precios</em> para usted!</h2>
                 </div>
-                <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                <p>Pescadores artesanales confiables más cerca de ti</p>
                 <div class="main-button">
-                  <a href="shop.html">Shop Now</a>
+                  <a href="shop.html">Explorar la tienda</a>
                 </div>
               </div>
             </div>
@@ -367,13 +388,15 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="section-heading">
-                  <h6>NEWSLETTER</h6>
-                  <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+                  <h6>Boletín informativo</h6>
+                  <h2>Accede a mucha más información acerca de los peces de la costa peruana <em>Subscribete </em>al
+                    Boletin informativo!</h2>
                 </div>
                 <div class="search-input">
                   <form id="subscribe" action="#">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email...">
-                    <button type="submit">Subscribe Now</button>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Tu correo...">
+                    <button type="submit">Subscrirse ahora</button>
                   </form>
                 </div>
               </div>
@@ -387,7 +410,8 @@
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow" href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
+        <p>Copyright © 2024 ChallwaCom. Todos los derechos reservados. &nbsp;&nbsp; <a rel="nofollow"
+            href="https://templatemo.com" target="_blank">Design: TemplateMo</a></p>
       </div>
     </div>
   </footer>
@@ -401,5 +425,6 @@
   <script src="{{ url_for('static', filename='assets/js/counter.js') }}"></script>
   <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
 
-  </body>
+</body>
+
 </html>

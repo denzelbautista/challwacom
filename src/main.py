@@ -1,8 +1,13 @@
 import os
 
 from flask import Flask, send_file, render_template
+from models import Usuario, Producto, Pedido, LineaPedido, Comentario
+from database import db, init_db
 
 app = Flask(__name__)
+
+# Inicializar la base de datos
+init_db(app)
 
 @app.route("/")
 def index():
