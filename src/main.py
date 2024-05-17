@@ -7,7 +7,7 @@ from database import db, init_db
 app = Flask(__name__)
 
 # Inicializar la base de datos
-init_db(app)
+# init_db(app)
 
 @app.route("/")
 def index():
