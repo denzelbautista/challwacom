@@ -2,34 +2,19 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>Lugx Gaming Shop HTML5 Template</title>
-
-    <!-- Bootstrap core CSS -->
+    <title>ChallwaCom</title>
     <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-lugx-gaming.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animate.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
-
-TemplateMo 589 lugx gaming
-
-https://templatemo.com/tm-589-lugx-gaming
-
--->
   </head>
 
 <body>
-
-  <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -55,10 +40,11 @@ https://templatemo.com/tm-589-lugx-gaming
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html" class="active">Inicio</a></li>
-                      <li><a href="shop.html">Tienda</a></li>
-                      <li><a href="product-details.html">Vende ahora</a></li>
-                      <li><a href="contact.html">Contacto</a></li>
+                      <li><a href="{{ url_for('index') }}" class="active">Inicio</a></li>
+                      <li><a href="{{ url_for('shop') }}">Tienda</a></li>
+                      <li><a href="{{ url_for('sell') }}">Vende ahora</a></li>
+                      <li><a href="{{ url_for('fishes') }}">Conoce los peces</a></li>
+                      <li><a href="{{ url_for('contact') }}">Contacto</a></li>
                       <li><a href="#">Inicia sesion</a></li>
                   </ul>   
                     <a class='menu-trigger'>
@@ -79,11 +65,11 @@ https://templatemo.com/tm-589-lugx-gaming
           <div class="caption header-text">
             <h6>Bienvenidos a ChallwaCom</h6>
             <h2>TIENDA DE PRODUCTOS PESQUEROS!</h2>
-            <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
+            <p>¡Descubre lo mejor del mar con ChallwaCom! Apoya a los pescadores artesanales y disfruta de productos frescos y sostenibles directamente del océano. ¡Bienvenido a bordo!</p>
             <div class="search-input">
               <form id="search" action="#">
-                <input type="text" placeholder="Escribe Algo" id='searchText' name="searchKeyword" onkeypress="handle" />
-                <button role="button">BUSCA AHORA</button>
+                <input type="text" placeholder="Escribe lo que necesites" id='searchText' name="searchKeyword" onkeypress="handle" />
+                <button role="button">BUSCAR</button>
               </form>
             </div>
           </div>
@@ -104,9 +90,9 @@ https://templatemo.com/tm-589-lugx-gaming
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="{{ url_for('static', filename='assets/images/featured-01.png') }}" alt="" style="max-width: 44px;">
+                <img src="{{ url_for('static', filename='assets/images/fish.png') }}" alt="" style="max-width: 44px;">
               </div>
-              <h4>Free Storage</h4>
+              <h4>Peces de calidad</h4>
             </div>
           </a>
         </div>
@@ -114,9 +100,9 @@ https://templatemo.com/tm-589-lugx-gaming
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="{{ url_for('static', filename='assets/images/featured-02.png') }}" alt="" style="max-width: 44px;">
+                <img src="{{ url_for('static', filename='assets/images/fishing-rod.png') }}" alt="" style="max-width: 44px;">
               </div>
-              <h4>User More</h4>
+              <h4>Pesca sostenible</h4>
             </div>
           </a>
         </div>
@@ -124,9 +110,9 @@ https://templatemo.com/tm-589-lugx-gaming
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="{{ url_for('static', filename='assets/images/featured-03.png') }}" alt="" style="max-width: 44px;">
+                <img src="{{ url_for('static', filename='assets/images/sailboat.png') }}" alt="" style="max-width: 44px;">
               </div>
-              <h4>Reply Ready</h4>
+              <h4>Embarcaciones aptas</h4>
             </div>
           </a>
         </div>
@@ -134,9 +120,9 @@ https://templatemo.com/tm-589-lugx-gaming
           <a href="#">
             <div class="item">
               <div class="image">
-                <img src="{{ url_for('static', filename='assets/images/featured-04.png') }}" alt="" style="max-width: 44px;">
+                <img src="{{ url_for('static', filename='assets/images/users.png') }}" alt="" style="max-width: 44px;">
               </div>
-              <h4>Easy Layout</h4>
+              <h4>Conectando con la comunidad</h4>
             </div>
           </a>
         </div>
